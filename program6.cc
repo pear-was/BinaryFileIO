@@ -3,9 +3,10 @@
 // CS3377.002
 
 #include <iostream>
-#include "cdk.h"
 #include <fstream>
 #include <iomanip>
+#include <stdint.h>
+#include "cdk.h"
 //#include "program6.h"
 
 using namespace std;
@@ -17,23 +18,30 @@ using namespace std;
 
 const int maxRecordStringLength = 25;
 
-/*class BinaryFileRecord {
+class BinaryFileHeader {
 	public:
-		double myVal;
-		//uint8_t strLength;
+		uint32_t magicNumber;
+		uint32_t versionNumber;
+		uint64_t numRecords;
+};
+class BinaryFileRecord {
+	public:
+		uint8_t strLength;
 		char stringBuffer[maxRecordStringLength];
-};*/
+};
 
 int main() {
-	/*BinaryFileRecord *myRecord = new BinaryFileRecord();
-	myRecord->myVal = 123.4567;
+	//BinaryFileRecord *myRecord = new BinaryFileRecord();
+	BinaryFileHeader *myHeader = new BinaryFileHeader();
 
-	ofstream binOutfile("binaryfile.bin", ios::out | ios::binary);
+	ifstream binInfile("cs3377.bin", ios::out | ios::binary);
 
-	binOutfile.write((char *) myRecord, sizeOf(BinaryFileRecord));
+	binInfile.read((char *) myHeader, sizeof(BinaryFileHeader));
+	cout << "Value was: " << setprecision(10) << myHeader->magicNumber << endl;
+	binInfile.close();
+	return 0;
+	
 
-	binOutfile.close();
-	*/
 	WINDOW *window;
 	CDKSCREEN *cdkscreen;
 	CDKMATRIX *myMatrix;
