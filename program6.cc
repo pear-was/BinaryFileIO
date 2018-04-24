@@ -44,7 +44,11 @@ int main() {
 	cdkscreen = initCDKScreen(window);
 
 	initCDKColor();
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> working
 	myMatrix = newCDKMatrix(cdkscreen, CENTER, CENTER, MATRIX_HEIGHT, MATRIX_WIDTH, MATRIX_HEIGHT, MATRIX_WIDTH, MATRIX_NAME_STRING, (char **) rowTitles, (char **) columnTitles, boxWidths, boxTypes, 1, 1, ' ', ROW, true, true, false);
 
 	if(myMatrix == NULL) {
@@ -87,8 +91,13 @@ int main() {
 	binInfile.close();
 	
 	drawCDKMatrix(myMatrix, true);
+<<<<<<< HEAD
 	
 	// User input to quit program
+=======
+
+	// Read input from user for program exit
+>>>>>>> working
 	unsigned char x;
 	cin >> x;
 
