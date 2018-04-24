@@ -3,7 +3,7 @@
 Reads a binary file and outputs the result in a CDK matrix
 
 ##### Table of Contents  
-[Notes](#notes)
+[Notes](#notes)  
 [Other](#other)
 
 Example output:
