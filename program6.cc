@@ -30,7 +30,8 @@ class BinaryFileRecord {
 };
 
 int main(int argc, char* argv[]) {
-
+	
+	// Accept user input for binary file
 	string binaryfile = "cs3377.bin";
 	if(argc == 2)
 		binaryfile = argv[1];
