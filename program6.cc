@@ -16,6 +16,7 @@ using namespace std;
 
 const int maxRecordStringLength = 25;
 
+// Setup binary classes
 class BinaryFileHeader {
 	public:
 		uint32_t magicNumber;
@@ -55,7 +56,7 @@ int main() {
 	// Draw matrix
 	drawCDKMatrix(myMatrix, true);
 	
-	// Create Binary file readers
+	// Create binary file readers
 	BinaryFileRecord *myRecord = new BinaryFileRecord();
 	BinaryFileHeader *myHeader = new BinaryFileHeader();
 
