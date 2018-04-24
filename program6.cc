@@ -7,7 +7,6 @@
 #include <iomanip>
 #include <stdint.h>
 #include "cdk.h"
-//#include "program6.h"
 
 using namespace std;
 
