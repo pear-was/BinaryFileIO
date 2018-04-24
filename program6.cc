@@ -4,12 +4,7 @@
 
 #include <iostream>
 #include <fstream>
-#include <iomanip>
-#include <stdint.h>
 #include <sstream>
-#include <string>
-#include <algorithm>
-#include <cstring>
 #include "cdk.h"
 
 using namespace std;
@@ -38,7 +33,8 @@ int main() {
 	WINDOW *window;
 	CDKSCREEN *cdkscreen;
 	CDKMATRIX *myMatrix;
-
+	
+	// Setup CDK matrix
 	const char *rowTitles[] = {"0", "a", "b", "c", "d", "e"};
 	const char *columnTitles[] = {"0", "a", "b", "c", "d", "e"};
 	int boxWidths[] = {BOX_WIDTH, BOX_WIDTH, BOX_WIDTH, BOX_WIDTH, BOX_WIDTH, BOX_WIDTH};
@@ -49,7 +45,6 @@ int main() {
 
 	initCDKColor();
 	
-	// Setup matrix
 	myMatrix = newCDKMatrix(cdkscreen, CENTER, CENTER, MATRIX_HEIGHT, MATRIX_WIDTH, MATRIX_HEIGHT, MATRIX_WIDTH, MATRIX_NAME_STRING, (char **) rowTitles, (char **) columnTitles, boxWidths, boxTypes, 1, 1, ' ', ROW, true, true, false);
 
 	if(myMatrix == NULL) {
@@ -92,7 +87,8 @@ int main() {
 	binInfile.close();
 	
 	drawCDKMatrix(myMatrix, true);
-
+	
+	// User input to quit program
 	unsigned char x;
 	cin >> x;
 
