@@ -31,7 +31,6 @@ class BinaryFileRecord {
 
 int main() {
 	//BinaryFileRecord *myRecord = new BinaryFileRecord();
-	//
 	BinaryFileHeader *myHeader = new BinaryFileHeader();
 
 	ifstream binInfile("cs3377.bin", ios::out | ios::binary);
