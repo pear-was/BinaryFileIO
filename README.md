@@ -34,3 +34,5 @@ The program can accept a binary file as an argument. For example:
 ./Program6 binaryfile.bin
 ```
 If no arguments are given, it will default to *cs3377.bin*
+
+Project was done for CS3377 class at The University of Texas at Dallas

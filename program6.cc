@@ -9,6 +9,7 @@
 
 using namespace std;
 
+// Matrix definitions
 #define MATRIX_WIDTH 3
 #define MATRIX_HEIGHT 5
 #define BOX_WIDTH 20
