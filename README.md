@@ -3,10 +3,8 @@
 Reads a binary file and outputs the result in a CDK matrix
 
 ##### Table of Contents  
-[Notes](#Notes)
-=======
-###### Table of Contents
 [Notes](#notes)
+[Other](#other)
 
 Example output:
 ```
@@ -38,4 +36,5 @@ The program can accept a binary file as an argument. For example:
 ```
 If no arguments are given, it will default to *cs3377.bin*
 
-Project was done for CS3377 class at The University of Texas at Dallas
+## Other:
+Project for CS3377
