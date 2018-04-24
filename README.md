@@ -2,8 +2,13 @@
 
 Reads a binary file and outputs the result in a CDK matrix
 
+<<<<<<< HEAD
 ##### Table of Contents  
 [Notes](#Notes)
+=======
+###### Table of Contents
+[Notes](#notes)
+>>>>>>> working
 
 Example output:
 ```
