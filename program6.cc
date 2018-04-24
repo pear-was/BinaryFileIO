@@ -29,7 +29,11 @@ class BinaryFileRecord {
 		char stringBuffer[maxRecordStringLength];
 };
 
-int main() {
+int main(int argc, char* argv[]) {
+
+	string binaryfile = "cs3377.bin";
+	if(argc == 2)
+		binaryfile = argv[1];
 
 	WINDOW *window;
 	CDKSCREEN *cdkscreen;
@@ -60,7 +64,7 @@ int main() {
 	BinaryFileRecord *myRecord = new BinaryFileRecord();
 	BinaryFileHeader *myHeader = new BinaryFileHeader();
 
-	ifstream binInfile("cs3377.bin", ios::out | ios::binary);
+	ifstream binInfile(binaryfile, ios::out | ios::binary);
 
 	// Read in header
 	binInfile.read((char *) myHeader, sizeof(BinaryFileHeader));
