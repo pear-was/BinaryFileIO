@@ -3,7 +3,7 @@
 # CS3377.002
 
 CXX = g++
-CXXFLAGS = -Wall
+CXXFLAGS = -Wall -std=c++11
 CPPFLAGS = -I/scratch/perkins/include
 
 LDFLAGS = -L/scratch/perkins/lib
